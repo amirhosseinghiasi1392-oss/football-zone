@@ -1,0 +1,972 @@
+/* تنظیمات کلی سایت */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #0b0b0b;
+    color: white;
+    line-height: 1.8;
+}
+
+/* سربرگ */
+header {
+    background-color: #111111;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 2px solid #d4af37;
+}
+
+.logo {
+    color: #ffd700;
+    font-size: 25px;
+    font-weight: bold;
+}
+ 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 9999;
+    background: #111;
+    padding: 15px;
+    border-bottom: 2px solid #ffd700;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* بخش اصلی */
+.hero {
+    min-height: 420px;
+    padding: 90px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #151515, #29220b, #090909);
+}
+
+
+
+.hero h1 {
+    font-size: 42px;
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 650px;
+    color: #eeeeee;
+}
+/* بخش اصلی */
+.hero {
+    min-height: 420px;
+    padding: 90px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;}
+.legend-card {
+    background: #171717;
+    border: 1px solid #333;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.legend-card:hover {
+    transform: translateY(-8px);
+    border-color: #ffd700;
+    box-shadow: 0 8px 25px #ffd70025;
+}
+
+.legend-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.legend-card h3 {
+    color: #ffd700;
+    padding: 12px 8px 4px;
+}
+
+.legend-card p {
+    color: #ccc;
+    padding: 0 8px 18px;
+    font-size: 13px;
+}
+
+@media (max-width: 800px) {
+    .legend-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 400px) {
+    .legend-card img {
+        height: 180px;
+    }
+}
+/* کارت‌های حرفه‌ای اسطوره‌های فوتبال */
+
+.legend-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.legend-card {
+    background: #171717;
+    border: 1px solid #333;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.legend-card:hover {
+    transform: translateY(-8px);
+    border-color: #ffd700;
+    box-shadow: 0 8px 25px #ffd70025;
+}
+
+.legend-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.legend-card h3 {
+    color: #ffd700;
+    padding: 12px 8px 4px;
+    text-align: center;
+}
+
+.legend-card p {
+    color: #ccc;
+    padding: 0 8px 18px;
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .legend-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 400px) {
+    .legend-card img {
+        height: 180px;
+    }
+}
+/* تصاویر بازی‌ها */
+.game-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+/* چیدمان کارت‌های بازی */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* ظاهر کارت‌ها */
+.card {
+    background: #181818;
+    border: 1px solid #333;
+    border-radius: 16px;
+    padding: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}/* مرتب‌سازی کارت‌های بازی */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+/* ظاهر کارت‌ها */
+.card {
+    width: 100%;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 16px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #ffcc00;
+}footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 50px;
+    border-top: 3px solid #ffcc00;
+}
+
+footer h3 {
+    color: #ffcc00;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+footer small {
+    color: #aaa;
+}
+/* افکت حرفه‌ای کارت‌ها */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.25);
+} 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.8s ease;
+}
+.hero {
+    background: linear-gradient(135deg, #111, #292000);
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    padding: 70px 20px;
+    margin: 30px 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.hero h1 {
+    color: #ffd700;
+    font-size: 42px;
+}
+
+.hero p {
+    color: white;
+    font-size: 18px;
+}
+.hero-btn {
+    display: inline-block;
+    background: #ffd700;
+    color: #111;
+    padding: 13px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+.hero {
+    background:
+        radial-gradient(circle at top, #514000 0%, #292000 40%, #111 100%);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.25);
+}
+
+.hero h1 {
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+.hero-btn {
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+}
+@media (max-width: 600px) {
+    .hero {
+        padding: 45px 15px;
+        margin: 15px 8px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-btn {
+        padding: 11px 22px;
+    }
+}
+@keyframes heroFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1,
+.hero p,
+.hero-btn {
+    animation: heroFade 1s ease forwards;
+}
+.hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.8)),
+        url("images/fc.jpg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-btn {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px #ffd700;
+}
+
+.hero-btn:hover {
+    background: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 25px #ffd700;
+    transform: scale(1.08);
+}
+.card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.35);
+    border: 1px solid #ffd700;
+}
+
+.card img {
+    transition: transform 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.06);
+}
+.hero h1 {
+    position: relative;
+    display: inline-block;
+}
+
+.hero h1::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 3px;
+    background: #ffd700;
+    margin: 12px auto 0;
+    border-radius: 10px;
+    animation: lineGlow 2s infinite alternate;
+}
+
+@keyframes lineGlow {
+    from {
+        box-shadow: 0 0 3px #ffd700;
+        width: 40%;
+    }
+
+    to {
+        box-shadow: 0 0 15px #ffd700;
+        width: 90%;
+    }
+}
+.search-box {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.search-box input {
+    width: 70%;
+    max-width: 450px;
+    padding: 14px 18px;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    background: #1a1a1a;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    box-shadow: 0 0 15px #ffd700;
+}
+#clearSearch {
+    background: #ffd700;
+    color: #111;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: 0.3s;
+}
+
+#clearSearch:hover {
+    background: white;
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #ffd700;
+}
+.popular-badge {
+    display: inline-block;
+    background: #ffd700;
+    color: #111;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.game-rating {
+    margin: 12px 0;
+    color: #ffd700;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.game-rating span {
+    color: white;
+    font-size: 15px;
+    margin-right: 8px;
+}
+.comparison {
+    margin: 40px 15px;
+    padding: 20px;
+    background: #151515;
+    border-radius: 15px;
+    border: 1px solid #ffd700;
+    text-align: center;
+}
+
+.comparison h2 {
+    color: #ffd700;
+    margin-bottom: 25px;
+}
+
+.comparison table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+.comparison th,
+.comparison td {
+    padding: 15px 8px;
+    border: 1px solid #555;
+    text-align: center;
+}
+
+.comparison th {
+    background: #3b3000;
+    color: #ffd700;
+}
+
+.comparison tr:nth-child(even) {
+    background: #252525;
+}
+.news-section {
+    margin: 50px 15px;
+    padding: 25px;
+    background: #151515;
+    border: 1px solid #ffd700;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.news-section h2 {
+    color: #ffd700;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background: #252525;
+    border: 1px solid #555;
+    border-radius: 12px;
+    padding: 25px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.news-card h3 {
+    color: #ffd700;
+}
+
+.news-card p {
+    color: white;
+    line-height: 1.8;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    border-color: #ffd700;
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2);
+}
+.news-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.news-card:hover .news-image {
+    transform: scale(1.04);
+}
+.read-more {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #ffd700;
+    color: #111;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.read-more:hover {
+    background: white;
+    transform: translateY(-3px);
+    box-shadow: 0 0 12px #ffd700;
+}
+@media (max-width: 600px) {
+    .news-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .news-section h2 {
+        font-size: 23px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .comparison {
+        overflow-x: auto;
+    }
+
+    .comparison table {
+        min-width: 550px;
+    }
+}
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffd700;
+    color: #111;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 0 10px #ffd700;
+}
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 40px;
+    border-top: 2px solid #ffd700;
+}
+
+footer p {
+    margin: 8px;
+    line-height: 1.8;
+}
+
+footer span {
+    color: #ffd700;
+}
+footer span {
+    color: #ff3333;
+    display: inline-block;
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+}
+footer span {
+    color: #ff3333;
+    display: inline-block;
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+#liveClock {
+    display: inline-block;
+    margin: 15px auto;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #222, #111);
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    direction: rtl;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    transition: 0.3s;
+}
+
+#liveClock:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    transform: scale(1.04);
+}
+body {
+    padding-top: 65px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+    background: #252525;
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
+    transform: translateY(-3px);
+}
+nav a:hover {
+    color: #ffd700 !important;
+    background: #333 !important;
+    box-shadow: 0 0 20px #ffd700 !important;
+}.hero h1 {
+    color: #ffd700;
+    text-shadow:
+        0 0 5px #ffd700,
+        0 0 15px rgba(255, 215, 0, 0.7),
+        0 0 30px rgba(255, 215, 0, 0.4);
+    animation: titleGlow 2s infinite alternate;
+}
+
+@keyframes titleGlow {
+    from {
+        text-shadow: 0 0 5px #ffd700;
+    }
+    to {
+        text-shadow: 0 0 25px #ffd700;
+    }
+}
+.search-box input {
+    border: 2px solid #555;
+    border-radius: 10px;
+    padding: 12px 15px;
+    background: #1a1a1a;
+    color: white;
+    transition: 0.3s;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #ffd700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+#clearSearch {
+    background: #ffd700;
+    color: #111;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#clearSearch:hover {
+    background: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffd700;
+}
+.player-of-week {
+    margin: 50px 15px;
+    padding: 30px;
+    background: linear-gradient(135deg, #151515, #292000);
+    border: 2px solid #ffd700;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.player-of-week h2 {
+    color: #ffd700;
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 12px #ffd700;
+}
+
+.player-card {
+    background: #1c1c1c;
+    border: 1px solid #ffd700;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 350px;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.player-card img {
+    display: block;
+    width: 220px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 15px;
+    margin: 0 auto 15px;
+    border: 2px solid #ffd700;
+}
+.player-badge {
+    display: inline-block;
+    background: #ffd700;
+    color: #111;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    box-shadow: 0 0 12px #ffd700;
+}
+.player-card {
+    animation: playerGlow 2s infinite alternate;
+}
+
+@keyframes playerGlow {
+    from {
+        box-shadow: 0 0 5px rgba(255, 215, 0, 0.2);
+    }
+    to {
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+    }
+}
+.player-stats span {
+    background: linear-gradient(135deg, #333, #171717);
+    border: 1px solid #ffd700;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.player-stats span:hover {
+    background: #ffd700;
+    color: #111;
+    transform: scale(1.08);
+}
+.player-stats span {
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 7px;
+}
+
+.player-stats {
+    gap: 8px;
+}
+.player-card img {
+    transition: transform 0.4s ease;
+}
+
+.player-card img:hover {
+    transform: scale(1.06);
+}
+.player-position {
+    display: inline-block;
+    background: #292929;
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    padding: 7px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 8px;
+}
+.player-trophies {
+    display: inline-block;
+    background: linear-gradient(135deg, #292929, #171717);
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+.player-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: #ffd700;
+    color: #111;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.player-more:hover {
+    background: white;
+    transform: translateY(-4px);
+    box-shadow: 0 0 15px #ffd700;
+}
+@media (max-width: 600px) {
+    .player-card {
+        width: 90%;
+        max-width: 320px;
+        box-sizing: border-box;
+        margin: auto;
+    }
+
+    .player-card img {
+        width: 180px;
+        height: 210px;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .player-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 600px) {
+    .comparison {
+        width: 100%;
+        overflow-x: auto;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .comparison table {
+        width: 100%;
+        min-width: 550px;
+        border-collapse: collapse;
+    }
+
+    .comparison th,
+    .comparison td {
+        padding: 10px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+}
+@media (max-width: 600px) {
+    nav {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    body {
+        padding-top: 55px;
+    }
+}
